@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PixbayApp
 //
-//  Created by D2k on 13/12/20.
+//  Created by Ajay Bhanushali on 13/12/20.
 //
 
 import UIKit

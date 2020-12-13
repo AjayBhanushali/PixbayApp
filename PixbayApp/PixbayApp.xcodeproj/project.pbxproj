@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A81960A42586768800100CB7 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960A32586768800100CB7 /* NetworkAPI.swift */; };
+		A81960AC258676EF00100CB7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960AB258676EF00100CB7 /* NetworkService.swift */; };
+		A81960B12586771800100CB7 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960B02586771800100CB7 /* NetworkError.swift */; };
+		A81960B62586775900100CB7 /* NetworkAPIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960B52586775900100CB7 /* NetworkAPIEndPoint.swift */; };
+		A81960BB2586780C00100CB7 /* URLRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960BA2586780C00100CB7 /* URLRequestable.swift */; };
+		A81960C025868D2A00100CB7 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960BF25868D2A00100CB7 /* ImageDownloader.swift */; };
+		A81960C525868D5400100CB7 /* ImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960C425868D5400100CB7 /* ImageOperation.swift */; };
+		A81960D325868E6300100CB7 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960CB25868E6200100CB7 /* UIImageViewX.swift */; };
+		A81960D425868E6300100CB7 /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960CC25868E6200100CB7 /* UIViewControllerX.swift */; };
+		A81960D525868E6300100CB7 /* UIImageX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960CD25868E6200100CB7 /* UIImageX.swift */; };
+		A81960D625868E6300100CB7 /* FontX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960CE25868E6200100CB7 /* FontX.swift */; };
+		A81960D725868E6300100CB7 /* CollectionViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960CF25868E6200100CB7 /* CollectionViewX.swift */; };
+		A81960D825868E6300100CB7 /* ConstraintsX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960D025868E6200100CB7 /* ConstraintsX.swift */; };
+		A81960D925868E6300100CB7 /* ViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960D125868E6200100CB7 /* ViewX.swift */; };
+		A81960DA25868E6300100CB7 /* UIColorX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960D225868E6200100CB7 /* UIColorX.swift */; };
+		A81960E025868E9000100CB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960DF25868E9000100CB7 /* Constants.swift */; };
+		A81960E6258691CB00100CB7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81960E5258691CB00100CB7 /* Reusable.swift */; };
 		A87F20A825866C3C007B9872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20A725866C3C007B9872 /* AppDelegate.swift */; };
 		A87F20AC25866C3C007B9872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20AB25866C3C007B9872 /* ViewController.swift */; };
 		A87F20B225866C3C007B9872 /* PixbayApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A87F20B025866C3C007B9872 /* PixbayApp.xcdatamodeld */; };
@@ -35,6 +52,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A81960A32586768800100CB7 /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
+		A81960AB258676EF00100CB7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A81960B02586771800100CB7 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A81960B52586775900100CB7 /* NetworkAPIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIEndPoint.swift; sourceTree = "<group>"; };
+		A81960BA2586780C00100CB7 /* URLRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestable.swift; sourceTree = "<group>"; };
+		A81960BF25868D2A00100CB7 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		A81960C425868D5400100CB7 /* ImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOperation.swift; sourceTree = "<group>"; };
+		A81960CB25868E6200100CB7 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		A81960CC25868E6200100CB7 /* UIViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerX.swift; sourceTree = "<group>"; };
+		A81960CD25868E6200100CB7 /* UIImageX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageX.swift; sourceTree = "<group>"; };
+		A81960CE25868E6200100CB7 /* FontX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontX.swift; sourceTree = "<group>"; };
+		A81960CF25868E6200100CB7 /* CollectionViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewX.swift; sourceTree = "<group>"; };
+		A81960D025868E6200100CB7 /* ConstraintsX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsX.swift; sourceTree = "<group>"; };
+		A81960D125868E6200100CB7 /* ViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewX.swift; sourceTree = "<group>"; };
+		A81960D225868E6200100CB7 /* UIColorX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorX.swift; sourceTree = "<group>"; };
+		A81960DF25868E9000100CB7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A81960E5258691CB00100CB7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		A87F20A425866C3C007B9872 /* PixbayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixbayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87F20A725866C3C007B9872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A87F20AB25866C3C007B9872 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +110,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A819609A258675D200100CB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A87F20B825866C3F007B9872 /* Info.plist */,
+				A87F20B025866C3C007B9872 /* PixbayApp.xcdatamodeld */,
+				A87F20B525866C3F007B9872 /* LaunchScreen.storyboard */,
+				A87F20B325866C3F007B9872 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A81960A1258675F400100CB7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A81960E4258691BE00100CB7 /* Protocols */,
+				A81960DE25868E8200100CB7 /* Constants */,
+				A81960CA25868E4500100CB7 /* Extensions */,
+				A81960A22586760500100CB7 /* Network Manager */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		A81960A22586760500100CB7 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A81960A32586768800100CB7 /* NetworkAPI.swift */,
+				A81960AB258676EF00100CB7 /* NetworkService.swift */,
+				A81960B02586771800100CB7 /* NetworkError.swift */,
+				A81960B52586775900100CB7 /* NetworkAPIEndPoint.swift */,
+				A81960BA2586780C00100CB7 /* URLRequestable.swift */,
+				A81960BF25868D2A00100CB7 /* ImageDownloader.swift */,
+				A81960C425868D5400100CB7 /* ImageOperation.swift */,
+			);
+			name = "Network Manager";
+			sourceTree = "<group>";
+		};
+		A81960C925868DEE00100CB7 /* Application Files */ = {
+			isa = PBXGroup;
+			children = (
+				A87F20A725866C3C007B9872 /* AppDelegate.swift */,
+				A87F20E325866D0A007B9872 /* AppBuilder.swift */,
+			);
+			name = "Application Files";
+			sourceTree = "<group>";
+		};
+		A81960CA25868E4500100CB7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A81960CF25868E6200100CB7 /* CollectionViewX.swift */,
+				A81960D025868E6200100CB7 /* ConstraintsX.swift */,
+				A81960CE25868E6200100CB7 /* FontX.swift */,
+				A81960D225868E6200100CB7 /* UIColorX.swift */,
+				A81960CB25868E6200100CB7 /* UIImageViewX.swift */,
+				A81960CD25868E6200100CB7 /* UIImageX.swift */,
+				A81960CC25868E6200100CB7 /* UIViewControllerX.swift */,
+				A81960D125868E6200100CB7 /* ViewX.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A81960DE25868E8200100CB7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A81960DF25868E9000100CB7 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		A81960E4258691BE00100CB7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A81960E5258691CB00100CB7 /* Reusable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		A87F209B25866C3C007B9872 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +209,10 @@
 		A87F20A625866C3C007B9872 /* PixbayApp */ = {
 			isa = PBXGroup;
 			children = (
-				A87F20A725866C3C007B9872 /* AppDelegate.swift */,
+				A81960C925868DEE00100CB7 /* Application Files */,
+				A81960A1258675F400100CB7 /* Common */,
+				A819609A258675D200100CB7 /* Supporting Files */,
 				A87F20AB25866C3C007B9872 /* ViewController.swift */,
-				A87F20B325866C3F007B9872 /* Assets.xcassets */,
-				A87F20B525866C3F007B9872 /* LaunchScreen.storyboard */,
-				A87F20B825866C3F007B9872 /* Info.plist */,
-				A87F20B025866C3C007B9872 /* PixbayApp.xcdatamodeld */,
-				A87F20E325866D0A007B9872 /* AppBuilder.swift */,
 			);
 			path = PixbayApp;
 			sourceTree = "<group>";
@@ -257,10 +364,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81960D525868E6300100CB7 /* UIImageX.swift in Sources */,
+				A81960B62586775900100CB7 /* NetworkAPIEndPoint.swift in Sources */,
 				A87F20B225866C3C007B9872 /* PixbayApp.xcdatamodeld in Sources */,
+				A81960B12586771800100CB7 /* NetworkError.swift in Sources */,
+				A81960A42586768800100CB7 /* NetworkAPI.swift in Sources */,
+				A81960D625868E6300100CB7 /* FontX.swift in Sources */,
+				A81960E6258691CB00100CB7 /* Reusable.swift in Sources */,
+				A81960BB2586780C00100CB7 /* URLRequestable.swift in Sources */,
 				A87F20AC25866C3C007B9872 /* ViewController.swift in Sources */,
+				A81960D825868E6300100CB7 /* ConstraintsX.swift in Sources */,
+				A81960C025868D2A00100CB7 /* ImageDownloader.swift in Sources */,
+				A81960D425868E6300100CB7 /* UIViewControllerX.swift in Sources */,
 				A87F20A825866C3C007B9872 /* AppDelegate.swift in Sources */,
+				A81960C525868D5400100CB7 /* ImageOperation.swift in Sources */,
+				A81960D325868E6300100CB7 /* UIImageViewX.swift in Sources */,
+				A81960DA25868E6300100CB7 /* UIColorX.swift in Sources */,
+				A81960E025868E9000100CB7 /* Constants.swift in Sources */,
+				A81960AC258676EF00100CB7 /* NetworkService.swift in Sources */,
+				A81960D925868E6300100CB7 /* ViewX.swift in Sources */,
 				A87F20E425866D0A007B9872 /* AppBuilder.swift in Sources */,
+				A81960D725868E6300100CB7 /* CollectionViewX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = KR4V4T66T8;
 				INFOPLIST_FILE = PixbayApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -436,6 +561,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = abc.PixbayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -449,6 +575,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = KR4V4T66T8;
 				INFOPLIST_FILE = PixbayApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -456,6 +583,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = abc.PixbayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

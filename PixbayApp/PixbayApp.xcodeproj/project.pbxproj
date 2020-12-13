@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A87F20A825866C3C007B9872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20A725866C3C007B9872 /* AppDelegate.swift */; };
+		A87F20AC25866C3C007B9872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20AB25866C3C007B9872 /* ViewController.swift */; };
+		A87F20B225866C3C007B9872 /* PixbayApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A87F20B025866C3C007B9872 /* PixbayApp.xcdatamodeld */; };
+		A87F20B425866C3F007B9872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87F20B325866C3F007B9872 /* Assets.xcassets */; };
+		A87F20B725866C3F007B9872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87F20B525866C3F007B9872 /* LaunchScreen.storyboard */; };
+		A87F20C225866C3F007B9872 /* PixbayAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20C125866C3F007B9872 /* PixbayAppTests.swift */; };
+		A87F20CD25866C3F007B9872 /* PixbayAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20CC25866C3F007B9872 /* PixbayAppUITests.swift */; };
+		A87F20E425866D0A007B9872 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20E325866D0A007B9872 /* AppBuilder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A87F20BE25866C3F007B9872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A87F209C25866C3C007B9872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A87F20A325866C3C007B9872;
+			remoteInfo = PixbayApp;
+		};
+		A87F20C925866C3F007B9872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A87F209C25866C3C007B9872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A87F20A325866C3C007B9872;
+			remoteInfo = PixbayApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A87F20A425866C3C007B9872 /* PixbayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixbayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87F20A725866C3C007B9872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A87F20AB25866C3C007B9872 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A87F20B125866C3C007B9872 /* PixbayApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PixbayApp.xcdatamodel; sourceTree = "<group>"; };
+		A87F20B325866C3F007B9872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A87F20B625866C3F007B9872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A87F20B825866C3F007B9872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A87F20BD25866C3F007B9872 /* PixbayAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixbayAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87F20C125866C3F007B9872 /* PixbayAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixbayAppTests.swift; sourceTree = "<group>"; };
+		A87F20C325866C3F007B9872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A87F20C825866C3F007B9872 /* PixbayAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixbayAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87F20CC25866C3F007B9872 /* PixbayAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixbayAppUITests.swift; sourceTree = "<group>"; };
+		A87F20CE25866C3F007B9872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A87F20E325866D0A007B9872 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A87F20A125866C3C007B9872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87F20BA25866C3F007B9872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87F20C525866C3F007B9872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A87F209B25866C3C007B9872 = {
+			isa = PBXGroup;
+			children = (
+				A87F20A625866C3C007B9872 /* PixbayApp */,
+				A87F20C025866C3F007B9872 /* PixbayAppTests */,
+				A87F20CB25866C3F007B9872 /* PixbayAppUITests */,
+				A87F20A525866C3C007B9872 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A87F20A525866C3C007B9872 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A87F20A425866C3C007B9872 /* PixbayApp.app */,
+				A87F20BD25866C3F007B9872 /* PixbayAppTests.xctest */,
+				A87F20C825866C3F007B9872 /* PixbayAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A87F20A625866C3C007B9872 /* PixbayApp */ = {
+			isa = PBXGroup;
+			children = (
+				A87F20A725866C3C007B9872 /* AppDelegate.swift */,
+				A87F20AB25866C3C007B9872 /* ViewController.swift */,
+				A87F20B325866C3F007B9872 /* Assets.xcassets */,
+				A87F20B525866C3F007B9872 /* LaunchScreen.storyboard */,
+				A87F20B825866C3F007B9872 /* Info.plist */,
+				A87F20B025866C3C007B9872 /* PixbayApp.xcdatamodeld */,
+				A87F20E325866D0A007B9872 /* AppBuilder.swift */,
+			);
+			path = PixbayApp;
+			sourceTree = "<group>";
+		};
+		A87F20C025866C3F007B9872 /* PixbayAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A87F20C125866C3F007B9872 /* PixbayAppTests.swift */,
+				A87F20C325866C3F007B9872 /* Info.plist */,
+			);
+			path = PixbayAppTests;
+			sourceTree = "<group>";
+		};
+		A87F20CB25866C3F007B9872 /* PixbayAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A87F20CC25866C3F007B9872 /* PixbayAppUITests.swift */,
+				A87F20CE25866C3F007B9872 /* Info.plist */,
+			);
+			path = PixbayAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A87F20A325866C3C007B9872 /* PixbayApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A87F20D125866C3F007B9872 /* Build configuration list for PBXNativeTarget "PixbayApp" */;
+			buildPhases = (
+				A87F20A025866C3C007B9872 /* Sources */,
+				A87F20A125866C3C007B9872 /* Frameworks */,
+				A87F20A225866C3C007B9872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixbayApp;
+			productName = PixbayApp;
+			productReference = A87F20A425866C3C007B9872 /* PixbayApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A87F20BC25866C3F007B9872 /* PixbayAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A87F20D425866C3F007B9872 /* Build configuration list for PBXNativeTarget "PixbayAppTests" */;
+			buildPhases = (
+				A87F20B925866C3F007B9872 /* Sources */,
+				A87F20BA25866C3F007B9872 /* Frameworks */,
+				A87F20BB25866C3F007B9872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A87F20BF25866C3F007B9872 /* PBXTargetDependency */,
+			);
+			name = PixbayAppTests;
+			productName = PixbayAppTests;
+			productReference = A87F20BD25866C3F007B9872 /* PixbayAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A87F20C725866C3F007B9872 /* PixbayAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A87F20D725866C3F007B9872 /* Build configuration list for PBXNativeTarget "PixbayAppUITests" */;
+			buildPhases = (
+				A87F20C425866C3F007B9872 /* Sources */,
+				A87F20C525866C3F007B9872 /* Frameworks */,
+				A87F20C625866C3F007B9872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A87F20CA25866C3F007B9872 /* PBXTargetDependency */,
+			);
+			name = PixbayAppUITests;
+			productName = PixbayAppUITests;
+			productReference = A87F20C825866C3F007B9872 /* PixbayAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A87F209C25866C3C007B9872 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					A87F20A325866C3C007B9872 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					A87F20BC25866C3F007B9872 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A87F20A325866C3C007B9872;
+					};
+					A87F20C725866C3F007B9872 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A87F20A325866C3C007B9872;
+					};
+				};
+			};
+			buildConfigurationList = A87F209F25866C3C007B9872 /* Build configuration list for PBXProject "PixbayApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A87F209B25866C3C007B9872;
+			productRefGroup = A87F20A525866C3C007B9872 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A87F20A325866C3C007B9872 /* PixbayApp */,
+				A87F20BC25866C3F007B9872 /* PixbayAppTests */,
+				A87F20C725866C3F007B9872 /* PixbayAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A87F20A225866C3C007B9872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A87F20B725866C3F007B9872 /* LaunchScreen.storyboard in Resources */,
+				A87F20B425866C3F007B9872 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87F20BB25866C3F007B9872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87F20C625866C3F007B9872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A87F20A025866C3C007B9872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A87F20B225866C3C007B9872 /* PixbayApp.xcdatamodeld in Sources */,
+				A87F20AC25866C3C007B9872 /* ViewController.swift in Sources */,
+				A87F20A825866C3C007B9872 /* AppDelegate.swift in Sources */,
+				A87F20E425866D0A007B9872 /* AppBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87F20B925866C3F007B9872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A87F20C225866C3F007B9872 /* PixbayAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87F20C425866C3F007B9872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A87F20CD25866C3F007B9872 /* PixbayAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A87F20BF25866C3F007B9872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A87F20A325866C3C007B9872 /* PixbayApp */;
+			targetProxy = A87F20BE25866C3F007B9872 /* PBXContainerItemProxy */;
+		};
+		A87F20CA25866C3F007B9872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A87F20A325866C3C007B9872 /* PixbayApp */;
+			targetProxy = A87F20C925866C3F007B9872 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A87F20B525866C3F007B9872 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A87F20B625866C3F007B9872 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A87F20CF25866C3F007B9872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A87F20D025866C3F007B9872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A87F20D225866C3F007B9872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR4V4T66T8;
+				INFOPLIST_FILE = PixbayApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.PixbayApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A87F20D325866C3F007B9872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR4V4T66T8;
+				INFOPLIST_FILE = PixbayApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.PixbayApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A87F20D525866C3F007B9872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR4V4T66T8;
+				INFOPLIST_FILE = PixbayAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.PixbayAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixbayApp.app/PixbayApp";
+			};
+			name = Debug;
+		};
+		A87F20D625866C3F007B9872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR4V4T66T8;
+				INFOPLIST_FILE = PixbayAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.PixbayAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixbayApp.app/PixbayApp";
+			};
+			name = Release;
+		};
+		A87F20D825866C3F007B9872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR4V4T66T8;
+				INFOPLIST_FILE = PixbayAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.PixbayAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PixbayApp;
+			};
+			name = Debug;
+		};
+		A87F20D925866C3F007B9872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR4V4T66T8;
+				INFOPLIST_FILE = PixbayAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.PixbayAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PixbayApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A87F209F25866C3C007B9872 /* Build configuration list for PBXProject "PixbayApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87F20CF25866C3F007B9872 /* Debug */,
+				A87F20D025866C3F007B9872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A87F20D125866C3F007B9872 /* Build configuration list for PBXNativeTarget "PixbayApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87F20D225866C3F007B9872 /* Debug */,
+				A87F20D325866C3F007B9872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A87F20D425866C3F007B9872 /* Build configuration list for PBXNativeTarget "PixbayAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87F20D525866C3F007B9872 /* Debug */,
+				A87F20D625866C3F007B9872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A87F20D725866C3F007B9872 /* Build configuration list for PBXNativeTarget "PixbayAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87F20D825866C3F007B9872 /* Debug */,
+				A87F20D925866C3F007B9872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A87F20B025866C3C007B9872 /* PixbayApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A87F20B125866C3C007B9872 /* PixbayApp.xcdatamodel */,
+			);
+			currentVersion = A87F20B125866C3C007B9872 /* PixbayApp.xcdatamodel */;
+			path = PixbayApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A87F209C25866C3C007B9872 /* Project object */;
+}

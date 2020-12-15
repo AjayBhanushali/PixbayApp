@@ -12,19 +12,17 @@ import UIKit
 extension UICollectionView {
     /// To Register cells using
     /// - Parameter cellClass: Cell type
-    func registerCell<Cell: UICollectionViewCell>(_ cellClass: Cell.Type) {
-        register(cellClass, forCellWithReuseIdentifier: String(describing: cellClass))
+    func registerCell<Cell: UICollectionViewCell>(_ cellClass: Cell.Type) where Cell: Reusable {
+        self.register(cellClass.self, forCellWithReuseIdentifier: cellClass.reuseIdentifier)
     }
     
     /// To make dequeue more readable and simple
     /// - Parameter indexPath: IndexPath of Cell for row at
     /// - Returns: the cell object
-    func dequeueReusableCell<Cell: UICollectionViewCell>(forIndexPath indexPath: IndexPath) -> Cell {
-        let identifier = String(describing: Cell.self)
-        guard let cell = self.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? Cell else {
-            fatalError("Error for cell id: \(identifier) at \(indexPath))")
+    final func dequeueReusableCell<Cell: UICollectionViewCell>(for indexPath: IndexPath) -> Cell where Cell: Reusable {
+        guard let cell = self.dequeueReusableCell(withReuseIdentifier: Cell.reuseIdentifier, for: indexPath) as? Cell else {
+            fatalError("Failed to dequeue a cell with identifier \(Cell.reuseIdentifier) matching type \(Cell.self).")
         }
-        
         return cell
     }
     

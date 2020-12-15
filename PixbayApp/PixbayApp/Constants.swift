@@ -16,6 +16,9 @@ enum Strings {
     static let retry = "Retry"
     static let error = "Error"
     static let close = "close"
+    
+    //GalleryVC Content
+    static let searchPlaceHolder = "Search for photos..."
 }
 
 /// App fonts size should be used from here
@@ -54,7 +57,7 @@ enum Constants {
     static let screenWidth: CGFloat = UIScreen.main.bounds.width
     static let defaultSpacing: CGFloat = 1
     static let defaultPadding: CGFloat = 8
-    static let numberOfColumns: CGFloat = 2
+    static let numberOfColumns: CGFloat = 3
     static let defaultRadius: CGFloat = 10
     static let defaultPageNum: Int = 0
     static let defaultTotalCount: Int = 0
@@ -67,4 +70,10 @@ public enum ViewState: Equatable {
     case content
     case error(String)
     case none
+}
+
+//NetworkAPI Constants
+enum APIConstants {
+    static let galleryBaseURL = "https://pixabay.com"
+    static let galleryAPIKey = "19509508-fd1611e76ba0920ff9e996c58"
 }

@@ -25,7 +25,7 @@ extension URLRequestable where Self: NetworkAPIEndPoint {
             let URL = baseURL
             throw NetworkError.invalidRequestURL(URL.appendingPathComponent(path))
         }
-        var request = URLRequest(url: url, cachePolicy: self.shouldCache ? .returnCacheDataElseLoad : .reloadIgnoringCacheData, timeoutInterval: 10)
+        var request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 10)
         request.httpMethod = method.rawValue
         request.setHeaders(headers)
         return request

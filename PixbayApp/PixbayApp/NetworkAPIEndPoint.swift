@@ -17,7 +17,6 @@ protocol NetworkAPIEndPoint: URLRequestable {
     var baseURL: URL { get }
     var path: String { get }
     var method: HTTPMethod { get }
-    var shouldCache: Bool { get }
     var parameters: [String: Any] { get }
     var headers: [String: String]? { get }
 }

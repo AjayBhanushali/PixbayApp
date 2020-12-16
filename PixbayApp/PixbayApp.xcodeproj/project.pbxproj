@@ -44,6 +44,12 @@
 		A87F20C225866C3F007B9872 /* PixbayAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20C125866C3F007B9872 /* PixbayAppTests.swift */; };
 		A87F20CD25866C3F007B9872 /* PixbayAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20CC25866C3F007B9872 /* PixbayAppUITests.swift */; };
 		A87F20E425866D0A007B9872 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20E325866D0A007B9872 /* AppBuilder.swift */; };
+		A89239FE258A50E500700D84 /* PhotoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89239FD258A50E400700D84 /* PhotoProtocols.swift */; };
+		A8923A03258A51CD00700D84 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8923A02258A51CD00700D84 /* PhotoVC.swift */; };
+		A8923A08258A52D200700D84 /* PhotoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8923A07258A52D200700D84 /* PhotoPresenter.swift */; };
+		A8923A0D258A52F800700D84 /* PhotoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8923A0C258A52F800700D84 /* PhotoInteractor.swift */; };
+		A8923A12258A535800700D84 /* PhotoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8923A11258A535800700D84 /* PhotoRouter.swift */; };
+		A8923A17258A537A00700D84 /* PhotoModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8923A16258A537A00700D84 /* PhotoModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +113,12 @@
 		A87F20CC25866C3F007B9872 /* PixbayAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixbayAppUITests.swift; sourceTree = "<group>"; };
 		A87F20CE25866C3F007B9872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87F20E325866D0A007B9872 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
+		A89239FD258A50E400700D84 /* PhotoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProtocols.swift; sourceTree = "<group>"; };
+		A8923A02258A51CD00700D84 /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
+		A8923A07258A52D200700D84 /* PhotoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresenter.swift; sourceTree = "<group>"; };
+		A8923A0C258A52F800700D84 /* PhotoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInteractor.swift; sourceTree = "<group>"; };
+		A8923A11258A535800700D84 /* PhotoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRouter.swift; sourceTree = "<group>"; };
+		A8923A16258A537A00700D84 /* PhotoModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +226,7 @@
 		A819612C2589160100100CB7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A89239FC258A50AF00700D84 /* Photo */,
 				A819612D2589161200100CB7 /* Gallery */,
 			);
 			name = Modules;
@@ -341,6 +354,19 @@
 				A87F20CE25866C3F007B9872 /* Info.plist */,
 			);
 			path = PixbayAppUITests;
+			sourceTree = "<group>";
+		};
+		A89239FC258A50AF00700D84 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				A89239FD258A50E400700D84 /* PhotoProtocols.swift */,
+				A8923A02258A51CD00700D84 /* PhotoVC.swift */,
+				A8923A07258A52D200700D84 /* PhotoPresenter.swift */,
+				A8923A0C258A52F800700D84 /* PhotoInteractor.swift */,
+				A8923A11258A535800700D84 /* PhotoRouter.swift */,
+				A8923A16258A537A00700D84 /* PhotoModuleBuilder.swift */,
+			);
+			name = Photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,7 +501,10 @@
 				A81960D525868E6300100CB7 /* UIImageX.swift in Sources */,
 				A8519D7C258941AF00070721 /* FooterView.swift in Sources */,
 				A8519D6C25893B9300070721 /* GalleryVC.swift in Sources */,
+				A8923A0D258A52F800700D84 /* PhotoInteractor.swift in Sources */,
+				A8923A17258A537A00700D84 /* PhotoModuleBuilder.swift in Sources */,
 				A8519D622589397000070721 /* GalleryModels.swift in Sources */,
+				A89239FE258A50E500700D84 /* PhotoProtocols.swift in Sources */,
 				A81960B62586775900100CB7 /* NetworkAPIEndPoint.swift in Sources */,
 				A87F20B225866C3C007B9872 /* PixbayApp.xcdatamodeld in Sources */,
 				A81960B12586771800100CB7 /* NetworkError.swift in Sources */,
@@ -484,13 +513,16 @@
 				A81960E6258691CB00100CB7 /* Reusable.swift in Sources */,
 				A81960BB2586780C00100CB7 /* URLRequestable.swift in Sources */,
 				A8519D7125893BF600070721 /* SearchVC.swift in Sources */,
+				A8923A03258A51CD00700D84 /* PhotoVC.swift in Sources */,
 				A8519D7725893CE600070721 /* ImageCell.swift in Sources */,
 				A87F20AC25866C3C007B9872 /* ViewController.swift in Sources */,
 				A8519D9E258950D600070721 /* NavigationControllerX.swift in Sources */,
+				A8923A08258A52D200700D84 /* PhotoPresenter.swift in Sources */,
 				A8519D81258943D500070721 /* GalleryPresenter.swift in Sources */,
 				A81960D825868E6300100CB7 /* ConstraintsX.swift in Sources */,
 				A81960C025868D2A00100CB7 /* ImageDownloader.swift in Sources */,
 				A8519D8925894BBB00070721 /* GalleryInteractor.swift in Sources */,
+				A8923A12258A535800700D84 /* PhotoRouter.swift in Sources */,
 				A81960D425868E6300100CB7 /* UIViewControllerX.swift in Sources */,
 				A8519D67258939E700070721 /* GalleryViewModel.swift in Sources */,
 				A87F20A825866C3C007B9872 /* AppDelegate.swift in Sources */,

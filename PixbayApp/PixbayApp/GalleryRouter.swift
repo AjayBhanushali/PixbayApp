@@ -12,6 +12,7 @@ final class GalleryRouter: GalleryRouterInput {
     weak var viewController: UIViewController?
     
     func showPhotoDetails(with imageUrl: URL) {
-        
+        let detailVC =  PhotoModuleBuilder().buildModule(with: imageUrl)
+        viewController?.present(detailVC, animated: true)
     }
 }

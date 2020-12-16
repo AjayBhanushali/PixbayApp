@@ -14,12 +14,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        configureURLCache()
         // Setting up Root View Controller for the app
         window = UIWindow(frame: UIScreen.main.bounds)
         AppBuilder().setRootViewController(in: window)
         return true
     }
-
+    
+    /// Configuring URL Cache
+    fileprivate func configureURLCache() {
+        let memoryCapacity = 1000 * 1024 * 1024 // 1 GB Memory Cache
+        let diskCapacity = 1000 * 1024 * 1024 // 1 GB Disk Cache
+        let cache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: "DataCachePath")
+        URLCache.shared = cache
+    }
+    
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {

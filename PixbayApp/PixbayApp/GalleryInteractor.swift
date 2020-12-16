@@ -22,7 +22,11 @@ final class GalleryIneractor: GalleryInteractorInput {
             guard let self = self else { return }
             switch result {
             case let .success(response):
-                self.presenter?.gallerySearchSuccess(response)
+                if response.total != nil, response.total! > 0 {
+                    self.presenter?.gallerySearchSuccess(response)
+                } else {
+                    self.presenter?.gallerySearchError(NetworkError.emptyData)
+                }
             case let .failure(error):
                 self.presenter?.gallerySearchError(error)
             }

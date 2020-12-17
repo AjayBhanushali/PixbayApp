@@ -50,6 +50,8 @@ protocol GalleryViewInput: BaseViewInput {
 
 //MARK: Presenter
 protocol GalleryModuleInput: AnyObject {
+    
+    var photos: [Photo]? { get set }
     /// View with object of inputVIew
     var view: GalleryViewInput? { get set }
     
@@ -81,7 +83,7 @@ protocol GalleryInteractorInput: AnyObject {
 
 //MARK: Router
 protocol GalleryRouterInput: AnyObject {
-    func showPhotoDetails(with imageUrl: URL)
+    func showPhotoDetails(with currentIndex: Int, in photos: [URL], for searchText: String)
 }
 
 

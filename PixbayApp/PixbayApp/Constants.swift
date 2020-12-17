@@ -59,7 +59,7 @@ enum Constants {
     static let defaultPadding: CGFloat = 8
     static let numberOfColumns: CGFloat = 3
     static let defaultRadius: CGFloat = 10
-    static let defaultPageNum: Int = 0
+    static let defaultPageNum: Int = 1
     static let defaultTotalCount: Int = 0
     static let defaultPageSize: Int = 20
 }

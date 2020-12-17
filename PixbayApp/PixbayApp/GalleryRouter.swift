@@ -10,9 +10,11 @@ import UIKit
 final class GalleryRouter: GalleryRouterInput {
    
     weak var viewController: UIViewController?
-    
-    func showPhotoDetails(with imageUrl: URL) {
-        let detailVC =  PhotoModuleBuilder().buildModule(with: imageUrl)
-        viewController?.present(detailVC, animated: true)
+    weak var delegate: GalleryPageVCDelegate?
+    func showPhotoDetails(with currentIndex: Int, in photos: [URL], for searchText: String) {
+        let pageVC = GalleryPageModuleBuilder().buildModule(using: photos, for: searchText, currentIndex: currentIndex)
+        viewController?.present(pageVC, animated: true)
     }
+    
+    
 }

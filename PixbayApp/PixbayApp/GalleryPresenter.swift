@@ -9,6 +9,8 @@ import Foundation
 
 final class GalleryPresenter: GalleryModuleInput {
     
+    var photos: [Photo]? = []
+    var searchText = ""
     weak var view: GalleryViewInput?
     var interactor: GalleryInteractorInput!
     var router: GalleryRouterInput!
@@ -35,6 +37,7 @@ final class GalleryPresenter: GalleryModuleInput {
 
 extension GalleryPresenter: GalleryViewOutput {
     func searchPhotos(matching imageName: String) {
+        searchText = imageName
         guard isMoreDataAvailable else { return }
         view?.changeViewState(.loading)
         pageNumber += 1
@@ -58,13 +61,27 @@ extension GalleryPresenter: GalleryViewOutput {
     }
     
     func didSelectPhoto(at index: Int) {
-        let imageUrl = galleryViewModel.photoUrlAt(index)
-        router.showPhotoDetails(with: imageUrl)
+        guard let photos = photos else { return }
+        let imageURLs = photos.compactMap { (photo) -> URL? in
+            guard let urlString = photo.largeImageURL, let imageUrl = URL(string: urlString) else {
+                return nil
+            }
+            return imageUrl
+        }
+        router.showPhotoDetails(with: index, in: imageURLs, for: searchText)
     }
 }
 
 extension GalleryPresenter: GalleryInteractorOutput {
     func gallerySearchSuccess(_ galleryPhotos: Gallery) {
+        if let hits = galleryPhotos.hits {
+            if photos != nil {
+                self.photos! += hits
+            } else {
+                self.photos = hits
+            }
+        }
+        
         guard let photosUrlList = galleryPhotos.hits?.compactMap({ (photo) -> URL? in
             guard let urlString = photo.previewURL, let imageUrl = URL(string: urlString) else {
                 return nil
@@ -89,5 +106,11 @@ extension GalleryPresenter: GalleryInteractorOutput {
         DispatchQueue.main.async {
             self.view?.changeViewState(.error(error.description))
         }
+    }
+}
+
+extension GalleryPresenter: GalleryPageVCDelegate {
+    func shareMorePhotos(index: Int, callBack: (([URL]?) -> Void)) {
+        searchPhotos(matching: searchText)
     }
 }

@@ -44,12 +44,12 @@
 		A87F20C225866C3F007B9872 /* PixbayAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20C125866C3F007B9872 /* PixbayAppTests.swift */; };
 		A87F20CD25866C3F007B9872 /* PixbayAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20CC25866C3F007B9872 /* PixbayAppUITests.swift */; };
 		A87F20E425866D0A007B9872 /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F20E325866D0A007B9872 /* AppBuilder.swift */; };
-		A89239FE258A50E500700D84 /* PhotoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89239FD258A50E400700D84 /* PhotoProtocols.swift */; };
 		A8923A03258A51CD00700D84 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8923A02258A51CD00700D84 /* PhotoVC.swift */; };
-		A8923A08258A52D200700D84 /* PhotoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8923A07258A52D200700D84 /* PhotoPresenter.swift */; };
-		A8923A0D258A52F800700D84 /* PhotoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8923A0C258A52F800700D84 /* PhotoInteractor.swift */; };
-		A8923A12258A535800700D84 /* PhotoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8923A11258A535800700D84 /* PhotoRouter.swift */; };
-		A8923A17258A537A00700D84 /* PhotoModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8923A16258A537A00700D84 /* PhotoModuleBuilder.swift */; };
+		A8FD755F258BB1CB00AAFA02 /* GalleryPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD755E258BB1CB00AAFA02 /* GalleryPageVC.swift */; };
+		A8FD7570258BDB1C00AAFA02 /* GalleryPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD756F258BDB1C00AAFA02 /* GalleryPagePresenter.swift */; };
+		A8FD7575258BDB5B00AAFA02 /* GalleryPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD7574258BDB5B00AAFA02 /* GalleryPageInteractor.swift */; };
+		A8FD757A258BDB6D00AAFA02 /* GalleryPageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD7579258BDB6D00AAFA02 /* GalleryPageBuilder.swift */; };
+		A8FD757F258BDB8C00AAFA02 /* GalleryPageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD757E258BDB8C00AAFA02 /* GalleryPageProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,12 +113,12 @@
 		A87F20CC25866C3F007B9872 /* PixbayAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixbayAppUITests.swift; sourceTree = "<group>"; };
 		A87F20CE25866C3F007B9872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87F20E325866D0A007B9872 /* AppBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
-		A89239FD258A50E400700D84 /* PhotoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProtocols.swift; sourceTree = "<group>"; };
 		A8923A02258A51CD00700D84 /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
-		A8923A07258A52D200700D84 /* PhotoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresenter.swift; sourceTree = "<group>"; };
-		A8923A0C258A52F800700D84 /* PhotoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInteractor.swift; sourceTree = "<group>"; };
-		A8923A11258A535800700D84 /* PhotoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRouter.swift; sourceTree = "<group>"; };
-		A8923A16258A537A00700D84 /* PhotoModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModuleBuilder.swift; sourceTree = "<group>"; };
+		A8FD755E258BB1CB00AAFA02 /* GalleryPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPageVC.swift; sourceTree = "<group>"; };
+		A8FD756F258BDB1C00AAFA02 /* GalleryPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPagePresenter.swift; sourceTree = "<group>"; };
+		A8FD7574258BDB5B00AAFA02 /* GalleryPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPageInteractor.swift; sourceTree = "<group>"; };
+		A8FD7579258BDB6D00AAFA02 /* GalleryPageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPageBuilder.swift; sourceTree = "<group>"; };
+		A8FD757E258BDB8C00AAFA02 /* GalleryPageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPageProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,7 +226,7 @@
 		A819612C2589160100100CB7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A89239FC258A50AF00700D84 /* Photo */,
+				A8FD755D258BB1B000AAFA02 /* Pages */,
 				A819612D2589161200100CB7 /* Gallery */,
 			);
 			name = Modules;
@@ -356,17 +356,17 @@
 			path = PixbayAppUITests;
 			sourceTree = "<group>";
 		};
-		A89239FC258A50AF00700D84 /* Photo */ = {
+		A8FD755D258BB1B000AAFA02 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				A89239FD258A50E400700D84 /* PhotoProtocols.swift */,
+				A8FD755E258BB1CB00AAFA02 /* GalleryPageVC.swift */,
+				A8FD757E258BDB8C00AAFA02 /* GalleryPageProtocols.swift */,
 				A8923A02258A51CD00700D84 /* PhotoVC.swift */,
-				A8923A07258A52D200700D84 /* PhotoPresenter.swift */,
-				A8923A0C258A52F800700D84 /* PhotoInteractor.swift */,
-				A8923A11258A535800700D84 /* PhotoRouter.swift */,
-				A8923A16258A537A00700D84 /* PhotoModuleBuilder.swift */,
+				A8FD756F258BDB1C00AAFA02 /* GalleryPagePresenter.swift */,
+				A8FD7574258BDB5B00AAFA02 /* GalleryPageInteractor.swift */,
+				A8FD7579258BDB6D00AAFA02 /* GalleryPageBuilder.swift */,
 			);
-			name = Photo;
+			name = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,32 +501,32 @@
 				A81960D525868E6300100CB7 /* UIImageX.swift in Sources */,
 				A8519D7C258941AF00070721 /* FooterView.swift in Sources */,
 				A8519D6C25893B9300070721 /* GalleryVC.swift in Sources */,
-				A8923A0D258A52F800700D84 /* PhotoInteractor.swift in Sources */,
-				A8923A17258A537A00700D84 /* PhotoModuleBuilder.swift in Sources */,
+				A8FD7575258BDB5B00AAFA02 /* GalleryPageInteractor.swift in Sources */,
 				A8519D622589397000070721 /* GalleryModels.swift in Sources */,
-				A89239FE258A50E500700D84 /* PhotoProtocols.swift in Sources */,
 				A81960B62586775900100CB7 /* NetworkAPIEndPoint.swift in Sources */,
 				A87F20B225866C3C007B9872 /* PixbayApp.xcdatamodeld in Sources */,
+				A8FD7570258BDB1C00AAFA02 /* GalleryPagePresenter.swift in Sources */,
 				A81960B12586771800100CB7 /* NetworkError.swift in Sources */,
 				A81960A42586768800100CB7 /* NetworkAPI.swift in Sources */,
 				A81960D625868E6300100CB7 /* FontX.swift in Sources */,
 				A81960E6258691CB00100CB7 /* Reusable.swift in Sources */,
+				A8FD757F258BDB8C00AAFA02 /* GalleryPageProtocols.swift in Sources */,
 				A81960BB2586780C00100CB7 /* URLRequestable.swift in Sources */,
 				A8519D7125893BF600070721 /* SearchVC.swift in Sources */,
 				A8923A03258A51CD00700D84 /* PhotoVC.swift in Sources */,
 				A8519D7725893CE600070721 /* ImageCell.swift in Sources */,
 				A87F20AC25866C3C007B9872 /* ViewController.swift in Sources */,
 				A8519D9E258950D600070721 /* NavigationControllerX.swift in Sources */,
-				A8923A08258A52D200700D84 /* PhotoPresenter.swift in Sources */,
+				A8FD755F258BB1CB00AAFA02 /* GalleryPageVC.swift in Sources */,
 				A8519D81258943D500070721 /* GalleryPresenter.swift in Sources */,
 				A81960D825868E6300100CB7 /* ConstraintsX.swift in Sources */,
 				A81960C025868D2A00100CB7 /* ImageDownloader.swift in Sources */,
 				A8519D8925894BBB00070721 /* GalleryInteractor.swift in Sources */,
-				A8923A12258A535800700D84 /* PhotoRouter.swift in Sources */,
 				A81960D425868E6300100CB7 /* UIViewControllerX.swift in Sources */,
 				A8519D67258939E700070721 /* GalleryViewModel.swift in Sources */,
 				A87F20A825866C3C007B9872 /* AppDelegate.swift in Sources */,
 				A81960C525868D5400100CB7 /* ImageOperation.swift in Sources */,
+				A8FD757A258BDB6D00AAFA02 /* GalleryPageBuilder.swift in Sources */,
 				A81960D325868E6300100CB7 /* UIImageViewX.swift in Sources */,
 				A81960DA25868E6300100CB7 /* UIColorX.swift in Sources */,
 				A81960E025868E9000100CB7 /* Constants.swift in Sources */,

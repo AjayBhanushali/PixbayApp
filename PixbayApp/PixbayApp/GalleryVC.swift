@@ -33,14 +33,19 @@ final class GalleryVC: UIViewController, GalleryViewInput, GallerySearchDelegate
     }()
     
     lazy var searchController: UISearchController = {
-        let searchVC = SearchVC()
-        searchVC.searchDelegate = self
-        let controller = UISearchController(searchResultsController: searchVC)
-        controller.obscuresBackgroundDuringPresentation = true
+        let controller = UISearchController()
+        controller.obscuresBackgroundDuringPresentation = false
         controller.searchResultsUpdater = nil
         controller.searchBar.placeholder = Strings.searchPlaceHolder
-        controller.searchBar.delegate = searchVC
+        controller.searchBar.delegate = self
         return controller
+    }()
+    
+    lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.delegate = self
+        tableView.dataSource = self
+        return tableView
     }()
     
     //MARK: ViewController Lifecycle
@@ -61,6 +66,7 @@ final class GalleryVC: UIViewController, GalleryViewInput, GallerySearchDelegate
     private func setupViews() {
         configureCollectionView()
         configureSearchController()
+        configureTableView()
     }
     
     private func themeViews() {
@@ -85,6 +91,12 @@ final class GalleryVC: UIViewController, GalleryViewInput, GallerySearchDelegate
         collectionView.register(FooterView.self, ofKind: UICollectionView.elementKindSectionFooter)
     }
     
+    private func configureTableView() {
+        view.addSubview(tableView)
+        tableView.isHidden = true
+        tableView.pinEdgesToSuperview()
+        tableView.register(RecentSearchCell.self, forCellReuseIdentifier: "RecentSearchCell")
+    }
     //MARK: GalleryViewInput
     func changeViewState(_ state: ViewState) {
         viewState = state
@@ -105,8 +117,15 @@ final class GalleryVC: UIViewController, GalleryViewInput, GallerySearchDelegate
         }
     }
     
+    func showRecentSearches(with viewModel: GalleryViewModel) {
+        galleryViewModel = viewModel
+        tableView.isHidden = false
+        view.bringSubviewToFront(tableView)
+        tableView.reloadData()
+    }
     
     func displayImages(with viewModel: GalleryViewModel) {
+        tableView.isHidden = true
         galleryViewModel = viewModel
         collectionView.reloadData()
     }
@@ -133,6 +152,14 @@ final class GalleryVC: UIViewController, GalleryViewInput, GallerySearchDelegate
         searchController.searchBar.text = searchText
         ImageDownloader.shared.cancelAll()
         presenter.searchPhotos(matching: searchText)
+    }
+    
+    func didStartEditing() {
+        presenter.showRecentSearchResults()
+    }
+    
+    func didCancelEditing() {
+        tableView.isHidden = true
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -204,3 +231,55 @@ extension GalleryVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLay
     }
 }
 
+extension GalleryVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return galleryViewModel?.recentSearches.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RecentSearchCell", for: indexPath) as! RecentSearchCell
+        if let searchText = galleryViewModel?.recentSearches[indexPath.row] {
+            cell.title = searchText
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let searchText = galleryViewModel?.recentSearches[indexPath.row] {
+            tableView.isHidden = true
+            presenter.clearData()
+            searchController.isActive = false
+            presenter.searchPhotos(matching: searchText)
+            searchController.searchBar.text = searchText
+        }
+        
+    }
+}
+
+extension GalleryVC: UISearchBarDelegate {
+
+
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        didStartEditing()
+        return true
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        didCancelEditing()
+    }
+
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+//        didStartEditing()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text else {
+            return
+        }
+        searchBar.text = text
+        searchBar.resignFirstResponder()
+        didTapSearchBar(withText: text)
+    }
+}

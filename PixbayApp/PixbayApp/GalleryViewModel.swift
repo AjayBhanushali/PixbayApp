@@ -9,7 +9,7 @@ import Foundation
 
 struct GalleryViewModel {
     var photosUrlList: [URL] = []
-    
+    var recentSearches: [String] = []
     var isEmpty: Bool {
         return photosUrlList.isEmpty
     }

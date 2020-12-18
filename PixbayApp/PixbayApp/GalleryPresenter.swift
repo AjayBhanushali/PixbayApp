@@ -36,6 +36,21 @@ final class GalleryPresenter: GalleryModuleInput {
 }
 
 extension GalleryPresenter: GalleryViewOutput {
+    func showRecentSearchResults() {
+        
+        if let recentSearches = DataBaseUtils.shared.fetchAllSearchText() {
+            guard !recentSearches.isEmpty else { return }
+            if galleryViewModel == nil {
+                galleryViewModel = GalleryViewModel(urlList: [])
+            }
+            galleryViewModel.recentSearches = recentSearches
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [unowned self] in
+                view?.showRecentSearches(with: self.galleryViewModel)
+            }
+        }
+    }
+    
     func searchPhotos(matching imageName: String) {
         searchText = imageName
         guard isMoreDataAvailable else { return }
@@ -56,6 +71,7 @@ extension GalleryPresenter: GalleryViewOutput {
         totalCount = Constants.defaultTotalCount
         totalPages = Constants.defaultTotalCount
         galleryViewModel = nil
+        photos = nil
         view?.resetViews()
         view?.changeViewState(.none)
     }

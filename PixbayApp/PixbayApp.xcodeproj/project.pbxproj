@@ -50,6 +50,9 @@
 		A8FD7575258BDB5B00AAFA02 /* GalleryPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD7574258BDB5B00AAFA02 /* GalleryPageInteractor.swift */; };
 		A8FD757A258BDB6D00AAFA02 /* GalleryPageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD7579258BDB6D00AAFA02 /* GalleryPageBuilder.swift */; };
 		A8FD757F258BDB8C00AAFA02 /* GalleryPageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD757E258BDB8C00AAFA02 /* GalleryPageProtocols.swift */; };
+		A8FD7590258BFCDF00AAFA02 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD758F258BFCDF00AAFA02 /* CacheManager.swift */; };
+		A8FD7595258C05BD00AAFA02 /* RecentSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD7594258C05BD00AAFA02 /* RecentSearchCell.swift */; };
+		A8FD759B258C0F2B00AAFA02 /* DataBaseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FD759A258C0F2B00AAFA02 /* DataBaseUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +122,9 @@
 		A8FD7574258BDB5B00AAFA02 /* GalleryPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPageInteractor.swift; sourceTree = "<group>"; };
 		A8FD7579258BDB6D00AAFA02 /* GalleryPageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPageBuilder.swift; sourceTree = "<group>"; };
 		A8FD757E258BDB8C00AAFA02 /* GalleryPageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPageProtocols.swift; sourceTree = "<group>"; };
+		A8FD758F258BFCDF00AAFA02 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		A8FD7594258C05BD00AAFA02 /* RecentSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchCell.swift; sourceTree = "<group>"; };
+		A8FD759A258C0F2B00AAFA02 /* DataBaseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 		A81960A1258675F400100CB7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A8FD7599258C0F1D00AAFA02 /* Utils */,
 				A81960E4258691BE00100CB7 /* Protocols */,
 				A81960DE25868E8200100CB7 /* Constants */,
 				A81960CA25868E4500100CB7 /* Extensions */,
@@ -226,8 +233,8 @@
 		A819612C2589160100100CB7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A8FD755D258BB1B000AAFA02 /* Pages */,
 				A819612D2589161200100CB7 /* Gallery */,
+				A8FD755D258BB1B000AAFA02 /* Pages */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -235,6 +242,7 @@
 		A819612D2589161200100CB7 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				A8FD758E258BFCCC00AAFA02 /* CacheManager */,
 				A8519DA82589522500070721 /* Protocols */,
 				A8519D7525893CD300070721 /* Views */,
 				A8519DA6258951FF00070721 /* Presenter */,
@@ -253,6 +261,7 @@
 				A8519D7025893BF600070721 /* SearchVC.swift */,
 				A8519D7625893CE600070721 /* ImageCell.swift */,
 				A8519D7B258941AF00070721 /* FooterView.swift */,
+				A8FD7594258C05BD00AAFA02 /* RecentSearchCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -367,6 +376,22 @@
 				A8FD7579258BDB6D00AAFA02 /* GalleryPageBuilder.swift */,
 			);
 			name = Pages;
+			sourceTree = "<group>";
+		};
+		A8FD758E258BFCCC00AAFA02 /* CacheManager */ = {
+			isa = PBXGroup;
+			children = (
+				A8FD758F258BFCDF00AAFA02 /* CacheManager.swift */,
+			);
+			name = CacheManager;
+			sourceTree = "<group>";
+		};
+		A8FD7599258C0F1D00AAFA02 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A8FD759A258C0F2B00AAFA02 /* DataBaseUtils.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FD759B258C0F2B00AAFA02 /* DataBaseUtils.swift in Sources */,
 				A81960D525868E6300100CB7 /* UIImageX.swift in Sources */,
 				A8519D7C258941AF00070721 /* FooterView.swift in Sources */,
 				A8519D6C25893B9300070721 /* GalleryVC.swift in Sources */,
@@ -533,7 +559,9 @@
 				A81960AC258676EF00100CB7 /* NetworkService.swift in Sources */,
 				A81960D925868E6300100CB7 /* ViewX.swift in Sources */,
 				A87F20E425866D0A007B9872 /* AppBuilder.swift in Sources */,
+				A8FD7595258C05BD00AAFA02 /* RecentSearchCell.swift in Sources */,
 				A819612F2589164D00100CB7 /* GalleryProtocols.swift in Sources */,
+				A8FD7590258BFCDF00AAFA02 /* CacheManager.swift in Sources */,
 				A8519D9425894F7E00070721 /* GalleryModuleBuilder.swift in Sources */,
 				A81960D725868E6300100CB7 /* CollectionViewX.swift in Sources */,
 				A8519D992589501300070721 /* GalleryRouter.swift in Sources */,

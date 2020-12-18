@@ -23,6 +23,7 @@ final class GalleryIneractor: GalleryInteractorInput {
             switch result {
             case let .success(response):
                 if response.total != nil, response.total! > 0 {
+                    DataBaseUtils.shared.insertSearchText(object: imageName)
                     self.presenter?.gallerySearchSuccess(response)
                 } else {
                     self.presenter?.gallerySearchError(NetworkError.emptyData)

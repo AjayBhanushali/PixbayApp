@@ -43,7 +43,7 @@ enum APP_FONT_STYLE: String {
 
 /// App images name should be used from here
 enum APP_IMAGES: String {
-    case APPICON = "APPICON"
+    case Recent = "recent"
 }
 
 /// App Colors shoud be used from here

@@ -9,6 +9,8 @@ import UIKit
 
 protocol GallerySearchDelegate: AnyObject {
     func didTapSearchBar(withText searchText: String)
+    func didStartEditing()
+    func didCancelEditing()
 }
 
 final class SearchVC: UIViewController, UISearchBarDelegate {
@@ -21,9 +23,14 @@ final class SearchVC: UIViewController, UISearchBarDelegate {
     }
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-       searchBar.resignFirstResponder()
+        searchBar.resignFirstResponder()
+        searchDelegate?.didCancelEditing()
     }
 
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchDelegate?.didStartEditing()
+    }
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let text = searchBar.text else {
             return

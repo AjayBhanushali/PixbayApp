@@ -2,7 +2,7 @@
 //  GalleryPresenter.swift
 //  PixbayApp
 //
-//  Created by D2k on 16/12/20.
+//  Created by Ajay Bhanushali on 16/12/20.
 //
 
 import Foundation
@@ -36,27 +36,12 @@ final class GalleryPresenter: GalleryModuleInput {
 }
 
 extension GalleryPresenter: GalleryViewOutput {
-    func showRecentSearchResults() {
-        
-        if let recentSearches = DataBaseUtils.shared.fetchAllSearchText() {
-            guard !recentSearches.isEmpty else { return }
-            if galleryViewModel == nil {
-                galleryViewModel = GalleryViewModel(urlList: [])
-            }
-            galleryViewModel.recentSearches = recentSearches
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [unowned self] in
-                view?.showRecentSearches(with: self.galleryViewModel)
-            }
-        }
-    }
-    
     func searchPhotos(matching imageName: String) {
         searchText = imageName
         guard isMoreDataAvailable else { return }
         view?.changeViewState(.loading)
-        pageNumber += 1
         interactor.loadPhotos(matching: imageName, pageNum: pageNumber)
+        if pageNumber == 1 { DataBaseUtils.shared.insertSearchText(object: imageName) }
     }
     
     var isMoreDataAvailable: Bool {
@@ -90,6 +75,7 @@ extension GalleryPresenter: GalleryViewOutput {
 
 extension GalleryPresenter: GalleryInteractorOutput {
     func gallerySearchSuccess(_ galleryPhotos: Gallery) {
+        pageNumber += 1
         if let hits = galleryPhotos.hits {
             if photos != nil {
                 self.photos! += hits

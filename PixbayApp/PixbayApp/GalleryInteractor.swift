@@ -2,7 +2,7 @@
 //  GalleryInteractor.swift
 //  PixbayApp
 //
-//  Created by D2k on 16/12/20.
+//  Created by Ajay Bhanushali on 16/12/20.
 //
 
 import Foundation
@@ -23,7 +23,6 @@ final class GalleryIneractor: GalleryInteractorInput {
             switch result {
             case let .success(response):
                 if response.total != nil, response.total! > 0 {
-                    DataBaseUtils.shared.insertSearchText(object: imageName)
                     self.presenter?.gallerySearchSuccess(response)
                 } else {
                     self.presenter?.gallerySearchError(NetworkError.emptyData)

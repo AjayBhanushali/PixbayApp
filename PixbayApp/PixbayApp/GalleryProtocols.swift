@@ -2,7 +2,7 @@
 //  GalleryProtocols.swift
 //  PixbayApp
 //
-//  Created by D2k on 15/12/20.
+//  Created by Ajay Bhanushali on 15/12/20.
 //
 
 import Foundation
@@ -44,8 +44,6 @@ protocol GalleryViewInput: BaseViewInput {
     /// Append items
     func insertImages(with viewModel: GalleryViewModel, at indexPaths: [IndexPath])
     
-    /// To show recent searches
-    func showRecentSearches(with viewModel: GalleryViewModel)
     /// Reset the list
     func resetViews()
 }
@@ -66,7 +64,6 @@ protocol GalleryModuleInput: AnyObject {
 
 protocol GalleryViewOutput: AnyObject {
     func searchPhotos(matching imageName: String)
-    func showRecentSearchResults()
     var isMoreDataAvailable: Bool { get }
     func clearData()
     func didSelectPhoto(at index: Int)

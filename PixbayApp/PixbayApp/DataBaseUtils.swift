@@ -2,7 +2,7 @@
 //  DataBaseUtils.swift
 //  PixbayApp
 //
-//  Created by D2k on 18/12/20.
+//  Created by Ajay Bhanushali on 18/12/20.
 //
 
 import UIKit

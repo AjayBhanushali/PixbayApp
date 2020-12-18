@@ -2,14 +2,14 @@
 //  GalleryViewModel.swift
 //  PixbayApp
 //
-//  Created by D2k on 16/12/20.
+//  Created by Ajay Bhanushali on 16/12/20.
 //
 
 import Foundation
 
 struct GalleryViewModel {
     var photosUrlList: [URL] = []
-    var recentSearches: [String] = []
+    
     var isEmpty: Bool {
         return photosUrlList.isEmpty
     }

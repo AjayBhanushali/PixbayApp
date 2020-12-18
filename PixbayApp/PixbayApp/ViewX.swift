@@ -12,6 +12,7 @@ extension UIView {
     /// To show loader
     func showSpinner() {
         let activityIndicator = UIActivityIndicatorView(style: .gray)
+        activityIndicator.color = .appBlack()
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         activityIndicator.hidesWhenStopped = true
         activityIndicator.startAnimating()

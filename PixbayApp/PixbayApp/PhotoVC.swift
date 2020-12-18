@@ -2,7 +2,7 @@
 //  PhotoVC.swift
 //  PixbayApp
 //
-//  Created by D2k on 16/12/20.
+//  Created by Ajay Bhanushali on 16/12/20.
 //
 
 import UIKit
@@ -21,7 +21,7 @@ final class PhotoViewController: UIViewController, BaseViewInput {
     
     override func loadView() {
         view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .appBackground()
     }
     
     override func viewDidLoad() {

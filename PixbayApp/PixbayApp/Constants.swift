@@ -18,6 +18,7 @@ enum Strings {
     static let close = "close"
     
     //GalleryVC Content
+    static let appTitle = "PixBay"
     static let searchPlaceHolder = "Search for photos..."
 }
 
@@ -62,6 +63,7 @@ enum Constants {
     static let defaultPageNum: Int = 1
     static let defaultTotalCount: Int = 0
     static let defaultPageSize: Int = 20
+    static let defaultIconSize: CGFloat = 24
 }
 
 /// breaking down a screen in its common/mostly used states

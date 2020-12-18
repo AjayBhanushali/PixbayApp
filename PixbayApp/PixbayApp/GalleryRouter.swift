@@ -2,7 +2,7 @@
 //  GalleryRouter.swift
 //  PixbayApp
 //
-//  Created by D2k on 16/12/20.
+//  Created by Ajay Bhanushali on 16/12/20.
 //
 
 import UIKit
@@ -15,6 +15,4 @@ final class GalleryRouter: GalleryRouterInput {
         let pageVC = GalleryPageModuleBuilder().buildModule(using: photos, for: searchText, currentIndex: currentIndex)
         viewController?.present(pageVC, animated: true)
     }
-    
-    
 }

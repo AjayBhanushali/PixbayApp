@@ -2,7 +2,7 @@
 //  RecentSearchCell.swift
 //  PixbayApp
 //
-//  Created by D2k on 18/12/20.
+//  Created by Ajay Bhanushali on 18/12/20.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ class RecentSearchCell: UITableViewCell {
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.textColor = .appBlack()
-        titleLabel.textAlignment = .center
+        titleLabel.textAlignment = .left
         titleLabel.font = UIFont(with: .MEDIUM, of: .SUB_TITLE)
         return titleLabel
     }()
@@ -22,7 +22,8 @@ class RecentSearchCell: UITableViewCell {
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.layer.masksToBounds = true
-        imageView.image = UIImage(with: .Recent)
+        imageView.tintColor = .appBlack()
+        imageView.image = UIImage(with: .Recent).withRenderingMode(.alwaysTemplate)
         return imageView
     }()
     
@@ -48,8 +49,9 @@ class RecentSearchCell: UITableViewCell {
     
     func prepareView() {
         contentView.addSubview(recentIconView)
-        recentIconView.pinEdgesEquallyToSuperview(atrributes: [.leading, .top, .bottom], constant: Constants.defaultPadding)
-        recentIconView.pinHeightWidth(constant: 24)
+        recentIconView.pinEdgesEquallyToSuperview(atrributes: [.top, .bottom], constant: Constants.defaultPadding)
+        recentIconView.pinEdgesEquallyToSuperview(atrributes: [.leading], constant: Constants.defaultPadding*2)
+        recentIconView.pinHeightWidth(constant: Constants.defaultIconSize)
         
         contentView.addSubview(titleLabel)
         titleLabel.pinTo(atrribute: .leading, toView: recentIconView, toAttribute: .trailing, constant: Constants.defaultPadding)

@@ -7,25 +7,6 @@
 
 import UIKit
 
-@nonobjc extension UIViewController {
-    func add(_ child: UIViewController, frame: CGRect? = nil) {
-        addChild(child)
-        
-        if let frame = frame {
-            child.view.frame = frame
-        }
-        
-        view.addSubview(child.view)
-        child.didMove(toParent: self)
-    }
-    
-    func remove() {
-        willMove(toParent: nil)
-        view.removeFromSuperview()
-        removeFromParent()
-    }
-}
-
 protocol GalleryPageVCDelegate: class {
     func shareMorePhotos(index: Int, callBack:(([URL]?)->Void))
 }
@@ -41,7 +22,6 @@ final class GalleryPageVC: UIViewController {
         return self.pageViewController.viewControllers![0] as! PhotoViewController
     }
     
-//    var photoUrls: [URL]!
     var currentIndex = 0
     var nextIndex: Int?
     weak var delegate: GalleryPageVCDelegate?
@@ -111,17 +91,13 @@ extension GalleryPageVC: UIPageViewControllerDelegate, UIPageViewControllerDataS
 }
 
 extension GalleryPageVC: GalleryPageViewInput {
-    
-    
     func displayImages(with viewModel: GalleryViewModel, _currentIndex: Int) {
         galleryViewModel = viewModel
         currentIndex = _currentIndex
         let vc = PhotoViewController()
         vc.index = self.currentIndex
         vc.imageURL = galleryViewModel.photosUrlList[self.currentIndex]
-        let viewControllers = [
-            vc
-        ]
+        let viewControllers = [vc]
         
         self.pageViewController.setViewControllers(viewControllers, direction: .forward, animated: true, completion: nil)
     }
@@ -132,12 +108,7 @@ extension GalleryPageVC: GalleryPageViewInput {
         let vc = PhotoViewController()
         vc.index = self.currentIndex
         vc.imageURL = galleryViewModel.photosUrlList[self.currentIndex]
-        let viewControllers = [
-            vc
-        ]
-        
+        let viewControllers = [vc]
         self.pageViewController.setViewControllers(viewControllers, direction: .forward, animated: true, completion: nil)
     }
-    
-    
 }
